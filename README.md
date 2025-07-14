@@ -40,3 +40,55 @@ Make sure the following tools are installed and accessible in your `$PATH`:
 
 ```bash
 chmod +x conan.sh
+```
+
+3. Run the script:
+
+```bash
+./conan.sh
+```
+
+---
+
+## 📁 Output
+
+All results will be saved in a directory named `recon_YYYYMMDD`, including:
+
+| File | Description |
+|------|-------------|
+| `allsubs.txt` | All unique subdomains |
+| `httpx200.txt` | Live subdomains (HTTP 200) |
+| `urls.txt` | Archived URLs from Wayback Machine |
+| `paramspider.txt` | Parameters discovered by ParamSpider |
+| `arjun.txt` | Hidden parameters discovered by Arjun |
+| `xss_unfilterd.txt` | Potential XSS injection points |
+| `parametersurls.txt` | URLs with query parameters |
+| `js_files.txt` | JavaScript or Java files |
+| `media_files.txt` | Images, PDFs, and office documents |
+
+---
+
+## 🎯 Who It's For
+
+- Bug bounty hunters 🐞  
+- Ethical hackers 👨‍💻  
+- Cybersecurity students and professionals 🎓  
+
+---
+
+## ⚠️ Notes
+
+- Written entirely in Bash
+- Easily extendable for more tools or checks
+- Does **not** require root access
+- Ensure all required tools are properly installed
+
+---
+
+## 📄 License
+
+Open-source under the [MIT License](LICENSE)
+
+---
+
+> _"I will dig into this more than I can, until all my curiosity dries out!" — Just like Detective Conan 🕵️‍♂️_
